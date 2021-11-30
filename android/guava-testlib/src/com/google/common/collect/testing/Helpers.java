@@ -461,7 +461,7 @@ public class Helpers {
 
     @Override
     public int compare(String lhs, String rhs) {
-      if (lhs == rhs) {
+      if (lhs.equals(rhs)) {
         return 0;
       }
       if (lhs == null) {

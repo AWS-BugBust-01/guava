@@ -38,7 +38,7 @@ To add a dependency on Guava using Maven, use the following:
 </dependency>
 ```
 
-To add a dependency using Gradle:
+To add a dependency using Gradle:f
 
 ```gradle
 dependencies {

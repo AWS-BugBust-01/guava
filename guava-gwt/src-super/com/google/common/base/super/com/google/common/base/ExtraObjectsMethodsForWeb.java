@@ -19,6 +19,6 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 /** Holder for extra methods of {@code Objects} only in web. */
 abstract class ExtraObjectsMethodsForWeb {
   public static boolean equal(@Nullable String a, @Nullable String b) {
-    return a == b;
+    return a.equals(b);
   }
 }

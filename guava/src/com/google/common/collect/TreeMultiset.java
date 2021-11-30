@@ -930,14 +930,13 @@ public final class TreeMultiset<E extends @Nullable Object> extends AbstractSort
     // Removes the maximum node from this subtree to be reused elsewhere
     @CheckForNull
     private AvlNode<E> removeMax(AvlNode<E> node) {
-      if (right == null) {
-        return left;
-      } else {
+      if (right != null) {
         right = right.removeMax(node);
         distinctElements--;
         totalCount -= node.elemCount;
         return rebalance();
       }
+      return left;
     }
 
     private void recomputeMultiset() {

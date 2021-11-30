@@ -905,14 +905,13 @@ public final class TreeMultiset<E extends @Nullable Object> extends AbstractSort
     // Removes the minimum node from this subtree to be reused elsewhere
     @CheckForNull
     private AvlNode<E> removeMin(AvlNode<E> node) {
-      if (left == null) {
-        return right;
-      } else {
+      if (left != null)  {
         left = left.removeMin(node);
         distinctElements--;
         totalCount -= node.elemCount;
         return rebalance();
       }
+      return right;
     }
 
     // Removes the maximum node from this subtree to be reused elsewhere

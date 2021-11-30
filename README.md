@@ -9,7 +9,7 @@ utilities for concurrency, I/O, hashing, caching, primitives, strings, and more!
 is widely used on most Java projects within Google, and widely used by many
 other companies as well.
 
-Guava comes in two flavors.
+Guava comes in two flavors.f
 
 *   The JRE flavor requires JDK 1.8 or higher.
 *   If you need support for JDK 1.7 or Android, use the Android flavor. You can
